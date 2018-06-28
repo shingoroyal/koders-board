@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('koders/{id}', 'KodersController@show');
+Route::post('koders', 'KodersController@store');
+Route::put('koders/{id}', 'KodersController@update');
+Route::delete('koders/{id}', 'KodersController@destroy');
