@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('koders/{id}', 'KodersController@show');
-Route::post('koders', 'KodersController@store');
-Route::put('koders/{id}', 'KodersController@update');
-Route::delete('koders/{id}', 'KodersController@destroy');
+Route::get('messages/{id}', 'MessagesController@show');
+Route::post('messages', 'MessagesController@store');
+Route::put('messages/{id}', 'MessagesController@update');
+Route::delete('messages/{id}', 'MessagesController@destroy');
